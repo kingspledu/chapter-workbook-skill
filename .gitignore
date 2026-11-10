@@ -1,0 +1,6 @@
+__pycache__/
+output/
+*.pdf
+*.png
+*.jpg
+*.pptx
