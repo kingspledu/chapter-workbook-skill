@@ -7,6 +7,8 @@ description: Build chapter-based early-reader workbooks from supplied books and 
 
 Read [the content contract](references/content-contract.md) before authoring. The content reference controls activities and answers; the design reference controls appearance only. Preserve that separation when references disagree.
 
+For a richly illustrated design reference, or when the user asks for generated page designs, use [the image-led workflow](references/image-led-layout.md). The basic renderer below is a typography-first fallback; it does not faithfully reproduce a watercolor workbook with a small header crop and one repeated footer picture.
+
 1. Inventory supplied PDFs with `scripts/inspect_books.py`. For image-only PDFs, render pages and read them visually or use OCR followed by visual verification. Empty extraction does not mean an empty chapter. Record both physical PDF page numbers and printed page numbers. Confirm chapter start/end before writing questions.
 2. Build a chapter evidence ledger: people, setting, event order, motivations, exact vocabulary occurrences and page references. Stop at the chapter boundary. Distinguish source text, an adapted reading, and newly authored practice sentences.
 3. Write a reviewed chapter JSON following the contract. Default to the pilot's 13-page activity progression only when the user's content reference matches it. Choose 12 chapter-attested words with varied usefulness and age-appropriate spelling, then derive all word exercises from that single ordered list. Do not force absent vocabulary or a bedtime theme into another chapter.

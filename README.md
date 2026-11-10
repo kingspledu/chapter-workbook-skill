@@ -6,6 +6,8 @@ Copy `skills/chapter-workbook` into your Codex skills directory. Read its SKILL.
 
 The skill covers chapter evidence, spelling and comprehension authoring, bilingual teacher notes, validation, editable publishing handoff, flattened A4 output and Canva import. The deterministic renderer handles a reviewed model; an AI/teacher must author and verify the chapter content. It does not automatically understand arbitrary scanned books.
 
+For richly illustrated references, the skill includes an image-led workflow: one coordinated 4×4 design-element atlas, a separate image generation for every page, then accurate editable typesetting over the paintings. The basic renderer is a typography-first fallback, not a substitute for that visual workflow. A grid-slicing helper is included; source books and artwork are not.
+
 ```powershell
 python skills/chapter-workbook/scripts/inspect_books.py books --output inspection
 python skills/chapter-workbook/scripts/render_workbook.py --chapter chapter.json --assets assets --output output
