@@ -8,6 +8,8 @@ The skill covers chapter evidence, spelling and comprehension authoring, bilingu
 
 For illustrated workbooks, use independent white-room regions: a reusable header, a different main scene per page generated in 2x2 sheets, 25 small ornaments in a 5x5 sheet, and four Word Bank frames in a 1-column x 4-row sheet. Exact type stays editable. The skill includes safe-box/title-occupancy rules, a configurable atlas splitter and a PDF region audit. The basic renderer remains a typography-first fallback; it does not implement the illustrated composition workflow.
 
+Ornaments use genuine PNG transparency. Word Bank artwork is generated for its final object ratio and placed proportionally; unsuitable frames are regenerated. The additional coloring workflow uses Google Flow when requested, keeps the color edition intact, records actual generation provenance, and reuses exact content with black type and open white line art. Accepted chapters are preserved as versioned project-local baselines. See the skill's linked references for these workflows and their validation limits.
+
 ```powershell
 python skills/chapter-workbook/scripts/inspect_books.py books --output inspection
 python skills/chapter-workbook/scripts/render_workbook.py --chapter chapter.json --assets assets --output output

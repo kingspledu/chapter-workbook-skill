@@ -18,6 +18,10 @@ For this user's established mode, use these defaults unless they request differe
 
 Specify all cells in reading order, safe insets, white gutters, no labels, and no cross-cell subjects. Inspect actual grid geometry. Split at native resolution with `scripts/split_atlas.py --columns N --rows N`; its default remains 4x4 for compatibility. Uniform inset can remove a grid line only if it does not cut the subject. Inspect every crop for neighboring-cell fragments. Separate a frame's outside pictogram using its actual boundary, never a fixed crop percentage inherited from another sheet. Preserve original sheets.
 
+The earlier 4x4 atlas was an exploration format. For this established workbook, the later 5x5 ornaments, 2x2 scenes and 1-column x 4-row frames supersede it. State both columns and rows so “1x4” cannot be interpreted as four narrow vertical boxes. If the generator cannot maintain four usable shallow frames in one sheet, use three stacked frames plus one separately generated shallow frame and record the exception.
+
+Small design elements must be real transparent-background PNGs with an alpha channel. Request transparency during generation where supported. Verify that corners contain alpha=0, that antialiased edges retain partial alpha, and that no white/checkerboard rectangle or matte halo remains. Preserve RGBA while splitting and trimming. Export transparency correctly in PDF (soft mask), PPTX and linked InDesign artwork; inspect the actual PDF, not just the PNG. A white-background image or a painted checkerboard is not transparent. If the selected service lacks alpha output, isolate the generated ornament with a suitable background-removal workflow and inspect edges; do not describe the unprocessed original as transparent.
+
 Record semantic page/scene/ornament/frame assignments in `page-asset-map.json`. Choose ornaments by the activity or vocabulary, not arbitrary round-robin decoration. Each page has one main scene; spare sheet scenes remain alternatives. Put tiny ornaments in dedicated free rooms, leaving answer rules clear.
 
 ## Prompt contract
@@ -42,6 +46,8 @@ Exclude: typography, pseudo-text, labels, numbers, watermark, smeared edges.
 ## Composition and export
 
 Fit scenes proportionally; never stretch faces/bodies. Design empty frames for their final aspect ratio. If painted edges cannot accommodate type, adjust the region or use a controlled vector frame. Do not accept a collision to retain a scallop. Do not flatten the whole composition before producing editable editions.
+
+For Word Bank frames, derive the target outer and safe-inner width/height from the final text layout BEFORE generation. Prompt for that object ratio, including white margins outside it. Measure and crop the actual frame rather than its whole square sheet. Place with equal X/Y scale. If it becomes too short, too tall or too narrow when proportionally fitted, regenerate the frame for the target ratio and integrate it in every deliverable. Never repair it by stretching left/right. A request to “reflect it in the mockup” requires rebuilding and inspecting the PDFs and editable exports, not merely saving the new asset.
 
 Use a single reviewed content model and ordered drawing records. Preserve paint order: page base/header, empty frames, worksheet shapes/rules, supplementary art, editable text. InDesign layer grouping must preserve those relationships. Match actual fonts across PDF/PPTX/HTML/InDesign; font-alias re-registration can be ignored by registries, so inspect the PDF font name.
 

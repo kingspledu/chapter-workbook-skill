@@ -8,6 +8,8 @@ In this theme, target roughly 80-85% title/nameplate width occupancy, with optic
 
 Compute font size from actual font width AND available height. Center using measured width and ascent/descent or visible glyph bounds. Verify optical vertical alignment in a rendered crop. Exclude the pig badge from the centering area. Center the grade plaque independently; a fixed left coordinate copied from the brand plaque is wrong.
 
+If newly generated header geometry no longer matches the existing typography, split it into independent brand plaque, grade plaque and chapter/activity ribbon. Regenerate an isolated plaque when cropping would cut its medallion, outline or surrounding decoration. Re-measure the new white interior; do not keep coordinates from the previous image. “Fill the ribbon” means readable optical occupancy with padding, not contact with every edge.
+
 ## Body and labels
 
 - Use equal left/right padding. Center note headings; left-align paragraphs in the full safe width. A teacher/parent heading begins BELOW the top padding, not on its box border. Avoid the earlier narrow paragraph column shifted far to the right.
@@ -16,6 +18,7 @@ Compute font size from actual font width AND available height. Center using meas
 - If text does not fit, grow/rearrange the region or redistribute decorative whitespace. Never horizontally compress glyphs, hide overflow, omit words or shrink everything. Preserve useful handwriting rules and answer boxes.
 - Reduce dead margins by enlarging useful type, writing space and scene slots, without crowding unrelated rooms. The pilot's 12% exercise expansion and guide-spacing factors were local fixes, not universal constants.
 - Match the selected font family in all outputs; use a Korean-capable font. Keep editable text separate until exporting the explicitly flattened edition.
+- Wrap teacher-guide English and Korean with their FINAL font sizes. Increasing a font after wrapping can make a previously valid line cross the box. Recompute both language blocks, card height and following card positions together. Preserve sentence order and translation pairs; leave room before the illustration/footer.
 
 ## Final validation
 
@@ -27,3 +30,5 @@ Compute font size from actual font width AND available height. Center using meas
 6. Reopen the flattened PDF: same A4 count, no text/form widgets, intended image resolution. Check PPTX text/count. Open/import in target apps when available; report unverified imports.
 
 If a previous PDF is locked by an editor, save a new version and link that exact file; do not claim the open older file changed. When asked only to verify, report measurements without silently editing. When asked to fix, complete and inspect the revised output.
+
+Wait for all exporters to finish before opening their output for validation. On Windows even a verification process can lock the flattened PDF and prevent its replacement. Close PDF handles with context managers, then validate the final saved files; a passing check of a stale prior export does not validate the current build.
