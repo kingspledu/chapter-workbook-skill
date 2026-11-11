@@ -14,6 +14,8 @@ For an ultrawide header when Flow only offers a less-wide canvas, preserve the o
 
 Record each reference, exact submitted prompt, provider/model when shown, project URL, result URL/identifier, local file and native pixel size. Download actual completed outputs before composing. Preserve original sheets and provenance privately with the workbook; do not publish references, artwork or signed result URLs in the public skill repository.
 
+Immediately before submitting each Flow job, verify the selected reference belongs to the intended chapter and no stale ingredient remains from the prior job. Inspect the actual composer after clearing/filling it; reactive editors can retain or duplicate input. Compare the completed image's characters, actions and props with that exact color reference before assigning its filename. Reject a technically successful result depicting another chapter. For padded ultrawide headers and crop checks, follow [header-revision.md](header-revision.md).
+
 ## Prompt template
 
 ```text
@@ -21,7 +23,8 @@ Convert the attached [region / explicit columns and rows] into crisp children's
 coloring-book line art. Preserve character identity, expression, pose, important
 objects, composition and cell order. Pure black clean continuous contours on
 pure white; medium-bold exterior contours and finer interior details. All
-interiors remain open white for coloring. White sky, moon, bedding and clothes;
+interiors remain open white for coloring. Keep existing sky, bedding and clothes white;
+do not introduce moons, stars, sunlight icons or other unsupported scenery.
 patterns use outline-only checks. No color, gray washes, halftone, shadows,
 solid black backgrounds, gradients, crosshatching or paper texture. No words,
 letters, numbers, watermark or labels. Complete subjects, safe insets and white

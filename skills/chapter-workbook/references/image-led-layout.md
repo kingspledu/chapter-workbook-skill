@@ -36,9 +36,9 @@ Record semantic page/scene/ornament/frame assignments in `page-asset-map.json`. 
 
 Use an available image-generation tool and follow its instructions. Identify style, character and edit inputs. Do not silently substitute a different provider/model when the user specifically names one.
 
-Specify the region, aspect ratio, crop boundaries, safe interior and exclusions. Describe crisp dark-navy ink contours, fine watercolor-paper grain, controlled cobalt/sky-blue washes, rosy pink, warm golden lamplight and consistent cool moonlight. Preserve identity and visual language, but explicitly reject smeared pigment, fuzzy contours, illegible glyphs and compression artifacts. Do not promise native pixel dimensions unsupported by the tool.
+Specify the region, aspect ratio, crop boundaries, safe interior and exclusions. Describe crisp dark-navy ink contours, fine watercolor-paper grain, controlled washes and the chapter's evidenced palette and lighting. Rosy pink, teal, gold or cobalt can maintain the design identity without imposing moonlight or a blue night panorama on every scene. Preserve identity and visual language, but explicitly reject smeared pigment, fuzzy contours, illegible glyphs and compression artifacts. Do not promise native pixel dimensions unsupported by the tool.
 
-Generated art has NO text, letters, numbers, pseudo-text, watermark, answer marks or writing rules. Books/cards may have blank pages. Word Bank frames need large clean white interiors and delicate painted edges, with tiny toast/moon/music/book motifs outside the text room. Typeset exact labels, vocabulary, questions and Korean translations afterwards.
+Generated art has NO text, letters, numbers, pseudo-text, watermark, answer marks or writing rules. Books/cards may have blank pages. Word Bank frames need large clean white interiors and delicate painted edges, with tiny chapter/activity-related motifs outside the text room. Use a moon only when supported by the scene or activity. Typeset exact labels, vocabulary, questions and Korean translations afterwards.
 
 ```text
 Asset: [explicit row/column grid] of [independent regions].
