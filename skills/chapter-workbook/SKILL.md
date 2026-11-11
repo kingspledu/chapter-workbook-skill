@@ -13,6 +13,8 @@ For an additional black-and-white coloring edition, read [coloring editions](ref
 
 For replacing existing headers or integrating artwork with exterior white padding, read [header revision and crop verification](references/header-revision.md). Preserve fine outline tips, use proportional placement, and verify the final exported text rooms and unchanged body content.
 
+For the canonical 13-page layout extracted from the verified later-chapter editions, read [the workbook template](references/workbook-template-v1.md). Use its room ranges and asset contracts as the starting template; replace chapter content and artwork only after evidence review.
+
 1. Inventory supplied PDFs with `scripts/inspect_books.py`. For image-only PDFs, render pages and read them visually or use OCR followed by visual verification. Empty extraction does not mean an empty chapter. Record both physical PDF page numbers and printed page numbers. Confirm chapter start/end before writing questions.
 2. Build a chapter evidence ledger: people, setting, event order, motivations, exact vocabulary occurrences and page references. Stop at the chapter boundary. Distinguish source text, an adapted reading, and newly authored practice sentences.
 3. Write a reviewed chapter JSON following the contract. Default to the pilot's 13-page activity progression only when the user's content reference matches it. Choose 12 chapter-attested words with varied usefulness and age-appropriate spelling, then derive all word exercises from that single ordered list. Do not force absent vocabulary or a bedtime theme into another chapter.
