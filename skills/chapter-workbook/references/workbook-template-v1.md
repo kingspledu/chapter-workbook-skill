@@ -39,7 +39,7 @@ Treat these as room ranges, not instructions to stretch an asset:
 | Word Bank label | roughly x 43, y 211 pt | Keep the label outside the frame and away from its pictogram. |
 | Ornaments | roughly 22–30 pt | Transparent PNG; place in free rooms only. |
 
-The repeated editions showed Word Bank frame placements around 551 × 95 pt. The native frame ratio must be measured before placement; approximately 3.94:1 is a useful starting measurement for this theme. If the generated cell differs, fit it with equal X/Y scale and adjust the room rather than stretching the frame.
+The repeated editions showed Word Bank frame placements range about 537–551 × 95 pt across color and coloring editions. The native frame ratio must be measured before placement; approximately 3.94:1 is a useful starting measurement for this theme. If the generated cell differs, fit it with equal X/Y scale and adjust the room rather than stretching the frame.
 
 ## Asset contracts
 
