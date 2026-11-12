@@ -15,6 +15,8 @@ For replacing existing headers or integrating artwork with exterior white paddin
 
 For the canonical 13-page layout extracted from the verified later-chapter editions, read [the workbook template](references/workbook-template-v1.md). Use its room ranges and asset contracts as the starting template; replace chapter content and artwork only after evidence review.
 
+For the fixed main-header appearance, read [the header format contract](references/header-format.md). A new chapter may change only the central story scene and chapter title; the header canvas, plaques, ribbon, badge and edge ornaments must retain the established format.
+
 1. Inventory supplied PDFs with `scripts/inspect_books.py`. For image-only PDFs, render pages and read them visually or use OCR followed by visual verification. Empty extraction does not mean an empty chapter. Record both physical PDF page numbers and printed page numbers. Confirm chapter start/end before writing questions.
 2. Build a chapter evidence ledger: people, setting, event order, motivations, exact vocabulary occurrences and page references. Stop at the chapter boundary. Distinguish source text, an adapted reading, and newly authored practice sentences.
 3. Write a reviewed chapter JSON following the contract. Default to the pilot's 13-page activity progression only when the user's content reference matches it. Choose 12 chapter-attested words with varied usefulness and age-appropriate spelling, then derive all word exercises from that single ordered list. Do not force absent vocabulary or a bedtime theme into another chapter.
