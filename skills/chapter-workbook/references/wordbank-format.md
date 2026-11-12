@@ -19,7 +19,7 @@ Each cell contains:
 - at most one small chapter/activity motif outside the writing room, normally at the left;
 - no labels, words, letters, numbers, pseudo-text, answer marks, rules or watermark.
 
-The generated frame must be suitable for both a six-word bank and a six-token sentence bank. The interior must support three columns and two rows of editable words with breathing room. If a motif reduces the usable room, move it outside the frame or regenerate the cell.
+The generated frame must be suitable for both a six-word bank and a six-token sentence bank. The interior must support three columns and two rows of editable words with breathing room. A 12-word spelling bank uses four columns and three rows with a measured smaller font and a safe bottom inset; the final row must remain fully inside the white room. If a motif reduces the usable room, move it outside the frame or regenerate the cell.
 
 ## Page placement
 
@@ -39,5 +39,6 @@ Generate the coloring frame in Google Flow from the completed color frame refere
 - Transparent corners/alpha or intentional white scene interior distinguished correctly.
 - No neighboring cell fragment, gutter line, matte halo or clipped outline.
 - Frame and all six words visible in a readable PDF close crop.
+- Twelve-word spelling banks use a separate four-column/three-row fit check; no descender or final row may cross the lower scallop.
 - Color and coloring editions keep the same word order and text rooms.
 - Final flattened A4 PDF contains the intended frame and no text overflow.
